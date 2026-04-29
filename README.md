@@ -98,20 +98,54 @@ pip install scikit-learn numpy scipy pandas
 
 ```md
   ## Project Flow
-Input News Text
-↓
-Text Preprocessing
-(Remove noise, Tokenization, Stemming)
-↓
-Feature Extraction
-(TF-IDF Vectorization)
-↓
-Model Training
-(Logistic Regression, SVM, Naive Bayes)
-↓
-Model Selection
-(Best model chosen based on performance)
-↓
-Prediction System
-↓
-Output: Fake / Real + Probability
++----------------------+
+|   Input News Text    |
+| (Headline/Article)   |
++----------+-----------+
+           |
+           v
++------------------------------+
+|     Text Preprocessing       |
+| - Remove noise (URLs, etc.)  |
+| - Tokenization               |
+| - Stopword removal           |
+| - Stemming                   |
++--------------+---------------+
+               |
+               v
++------------------------------+
+|   Feature Extraction (TF-IDF)|
+| Convert text → numerical data|
++--------------+---------------+
+               |
+               v
++------------------------------+
+|        Model Training        |
+| - Logistic Regression       |
+| - Naive Bayes               |
+| - SVM                       |
+| - Random Forest             |
++--------------+---------------+
+               |
+               v
++------------------------------+
+|  Model Evaluation & Selection|
+| - Accuracy                  |
+| - F1 Score                  |
+| - Confusion Matrix          |
+| Select Best Model           |
++--------------+---------------+
+               |
+               v
++------------------------------+
+|      Prediction System       |
+| Takes new input text         |
++--------------+---------------+
+               |
+               v
++------------------------------+
+|            Output            |
+| Fake / Real + Probability   |
++------------------------------+
+
+
