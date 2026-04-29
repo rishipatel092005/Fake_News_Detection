@@ -96,6 +96,7 @@ pip install scikit-learn numpy scipy pandas
 - scipy → scientific computations  
 - nltk (optional if used) → text preprocessing (tokenization, stemming)
 
+```md
   ## Project Flow
 Input News Text
 ↓
