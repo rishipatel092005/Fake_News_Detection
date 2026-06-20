@@ -1,4 +1,4 @@
-# Fake News Detection using Machine Learning
+# News Credibility Classifier using Machine Learning
 
 ## Overview
 This project focuses on detecting whether a news article is **Fake or Real** using Natural Language Processing (NLP) and Machine Learning techniques.  
